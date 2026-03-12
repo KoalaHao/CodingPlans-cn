@@ -40,37 +40,14 @@ export class DataLoader {
   }
 
   async scanDataFiles() {
-    // Method 1: Hardcoded list - easy to manage
-    // return ['dummy.json', 'zhipu.json', 'minimax.json'];
-
-    // Method 2: Auto-scan - fetch directory listing
-    try {
-      // Try to get directory listing
-      const response = await fetch('data/');
-      if (response.ok) {
-        const text = await response.text();
-        // Parse HTML directory listing to find JSON files
-        const matches = text.match(/href="([^"]+\.json)"/g);
-        if (matches) {
-          const files = matches
-            .map(m => m.replace('href="', '').replace('"', ''))
-            .filter(f => f !== 'models.json'); // Exclude models.json
-          return files;
-        }
-      }
-    } catch (e) {
-      console.log('Auto-scan failed, using manual list');
-    }
-
-    // Fallback: Manual list - add your provider files here
+    // Manual list - GitHub Pages doesn't support directory scanning
     return [
-      'dummy.json',
-      // Add more provider files here:
-      // 'zhipu.json',
-      // 'minimax.json',
-      // 'volcengine.json',
-      // 'kimi.json',
-      // 'aliyun.json',
+      'volcengine-coding-plan.json',
+      'qianfan-coding-plan.json',
+      'tencent-coding-plan.json',
+      'aliyun-bailian-coding-plan.json',
+      'infini-ai-coding-plan.json',
+      'mthreads-coding-plan.json'
     ];
   }
 
