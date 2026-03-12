@@ -53,7 +53,7 @@ export class DataLoader {
 
   async loadModelsData() {
     try {
-      const response = await fetch('data/models.json');
+      const response = await fetch('./data/models.json');
       if (!response.ok) {
         throw new Error(`Failed to load models.json: ${response.status}`);
       }
@@ -72,7 +72,7 @@ export class DataLoader {
 
   async loadProviderData(filename) {
     try {
-      const response = await fetch(`data/${filename}`);
+      const response = await fetch(`./data/${filename}`);
       if (!response.ok) {
         throw new Error(`Failed to load ${filename}: ${response.status}`);
       }
