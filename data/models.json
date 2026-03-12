@@ -1,0 +1,274 @@
+{
+  "models": [
+    {
+      "id": "doubao-seed-2.0-code",
+      "name": "Doubao-Seed-2.0-Code",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 76.5,
+        "liveCodeBench": 62.3,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["liveCodeBench"]
+    },
+    {
+      "id": "doubao-seed-2.0-pro",
+      "name": "Doubao-Seed-2.0-Pro",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 76.5,
+        "liveCodeBench": 87.8,
+        "parameters": "70B"
+      },
+      "estimatedBenchmarks": []
+    },
+    {
+      "id": "doubao-seed-2.0-lite",
+      "name": "Doubao-Seed-2.0-Lite",
+      "icon": "cpu",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": false,
+        "maxThinkingLength": null,
+        "sweBench": 58.2,
+        "liveCodeBench": 81.7,
+        "parameters": "7B"
+      },
+      "estimatedBenchmarks": ["sweBench"]
+    },
+    {
+      "id": "doubao-seed-code",
+      "name": "Doubao-Seed-Code",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 16000,
+        "sweBench": 62.5,
+        "liveCodeBench": 58.2,
+        "parameters": "16B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "minimax-m2.5",
+      "name": "MiniMax-M2.5",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 75.8,
+        "liveCodeBench": 68.5,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["liveCodeBench"]
+    },
+    {
+      "id": "kimi-k2.5",
+      "name": "Kimi-K2.5",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image", "video"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 70.8,
+        "liveCodeBench": 78.5,
+        "parameters": "1T"
+      },
+      "estimatedBenchmarks": ["liveCodeBench"]
+    },
+    {
+      "id": "glm-4.7",
+      "name": "GLM-4.7",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 65.2,
+        "liveCodeBench": 58.5,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "deepseek-v3.2",
+      "name": "DeepSeek-V3.2",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 70.0,
+        "liveCodeBench": 73.1,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["liveCodeBench"]
+    },
+    {
+      "id": "glm-5",
+      "name": "GLM-5",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 72.0,
+        "liveCodeBench": 75.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "hunyuan-2.0-instruct",
+      "name": "Tencent Hunyuan 2.0 Instruct",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 68.0,
+        "liveCodeBench": 65.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "hunyuan-t1",
+      "name": "Hunyuan-T1",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 72.0,
+        "liveCodeBench": 70.0,
+        "parameters": "100B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "hunyuan-turbos",
+      "name": "Hunyuan-TurboS",
+      "icon": "cpu",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": false,
+        "maxThinkingLength": null,
+        "sweBench": 65.0,
+        "liveCodeBench": 62.0,
+        "parameters": "13B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "qwen3.5-plus",
+      "name": "Qwen3.5-Plus",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 74.0,
+        "liveCodeBench": 76.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "qwen3-max",
+      "name": "Qwen3-Max",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 76.0,
+        "liveCodeBench": 79.0,
+        "parameters": "100B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "qwen3-coder-next",
+      "name": "Qwen3-Coder-Next",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 75.0,
+        "liveCodeBench": 80.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "qwen3-coder-plus",
+      "name": "Qwen3-Coder-Plus",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 78.0,
+        "liveCodeBench": 82.0,
+        "parameters": "100B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "minimax-m2.1",
+      "name": "MiniMax-M2.1",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 16000,
+        "sweBench": 72.0,
+        "liveCodeBench": 65.0,
+        "parameters": "16B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    },
+    {
+      "id": "deepseek-v3.2-thinking",
+      "name": "DeepSeek-V3.2-Thinking",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 75.0,
+        "liveCodeBench": 78.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+    }
+  ]
+}

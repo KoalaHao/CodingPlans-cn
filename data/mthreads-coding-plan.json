@@ -1,0 +1,70 @@
+{
+  "name": "摩尔线程 Coding Plan",
+  "url": "https://code.mthreads.com/",
+  "icon": "code",
+  "updatedAt": "2026-03-12",
+  "extraInfoUrls": [
+    "https://docs.mthreads.com/kuaecloud/kuaecloud-doc-online/coding_plan/plan_overview"
+  ],
+  "plans": [
+    {
+      "name": "Free Trial",
+      "price": {
+        "firstBuy": 0,
+        "firstRenew": null,
+        "regular": null,
+        "extraInfo": "每日限量100名，领取后30天内有效，与Lite Plan用量相当"
+      },
+      "limits": {
+        "per5hours": 40,
+        "perWeek": null,
+        "perMonth": null
+      }
+    },
+    {
+      "name": "Lite Plan",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 40,
+        "extraInfo": "¥120/季度(约¥40/月)，Claude Pro套餐的3倍用量"
+      },
+      "limits": {
+        "per5hours": 120,
+        "perWeek": null,
+        "perMonth": null
+      }
+    },
+    {
+      "name": "Pro Plan",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 200,
+        "extraInfo": "¥600/季度(约¥200/月)，Lite Plan的5倍用量，生成速度更高"
+      },
+      "limits": {
+        "per5hours": 600,
+        "perWeek": null,
+        "perMonth": null
+      }
+    },
+    {
+      "name": "Max Plan",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 400,
+        "extraInfo": "¥1200/季度(约¥400/月)，Pro Plan的4倍用量，优先保障用量高峰"
+      },
+      "limits": {
+        "per5hours": 2400,
+        "perWeek": null,
+        "perMonth": null
+      }
+    }
+  ],
+  "models": [
+    "glm-4.7"
+  ]
+}

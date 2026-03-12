@@ -1,0 +1,49 @@
+{
+  "name": "字节方舟 Coding Plan",
+  "url": "https://www.volcengine.com/activity/codingplan",
+  "icon": "code",
+  "updatedAt": "2026-03-12",
+  "extraInfoUrls": [
+    "https://www.volcengine.com/docs/82379/1925114?lang=zh"
+  ],
+  "plans": [
+    {
+      "name": "Lite套餐",
+      "price": {
+        "firstBuy": 9.9,
+        "firstRenew": null,
+        "regular": 40,
+        "extraInfo": "新用户首月9.9元，赠7天ArkClaw免费体验（需套餐剩余>7天）"
+      },
+      "limits": {
+        "per5hours": 1200,
+        "perWeek": 9000,
+        "perMonth": 18000
+      }
+    },
+    {
+      "name": "Pro套餐",
+      "price": {
+        "firstBuy": 49.9,
+        "firstRenew": null,
+        "regular": 200,
+        "extraInfo": "Lite套餐5倍用量，套餐周期内免费使用ArkClaw"
+      },
+      "limits": {
+        "per5hours": 6000,
+        "perWeek": 45000,
+        "perMonth": 90000
+      }
+    }
+  ],
+  "models": [
+    "doubao-seed-2.0-code",
+    "doubao-seed-2.0-pro",
+    "doubao-seed-2.0-lite",
+    "doubao-seed-code",
+    "minimax-m2.5",
+    "kimi-k2.5",
+    "glm-4.7",
+    "deepseek-v3.2"
+  ]
+}

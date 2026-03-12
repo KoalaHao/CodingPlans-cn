@@ -1,0 +1,47 @@
+{
+  "name": "腾讯云 Coding Plan",
+  "url": "https://cloud.tencent.com/act/pro/codingplan",
+  "icon": "code",
+  "updatedAt": "2026-03-12",
+  "extraInfoUrls": [
+    "https://cloud.tencent.com/document/product/1772/128947"
+  ],
+  "plans": [
+    {
+      "name": "Lite 套餐",
+      "price": {
+        "firstBuy": 7.9,
+        "firstRenew": 20,
+        "regular": 40,
+        "extraInfo": "首月7.9元（限时特惠），次月20元（5折），第三月起40元/月"
+      },
+      "limits": {
+        "per5hours": 1200,
+        "perWeek": 9000,
+        "perMonth": 18000
+      }
+    },
+    {
+      "name": "Pro 套餐",
+      "price": {
+        "firstBuy": 39.9,
+        "firstRenew": 100,
+        "regular": 200,
+        "extraInfo": "首月39.9元（限时特惠），次月100元（5折），第三月起200元/月"
+      },
+      "limits": {
+        "per5hours": 6000,
+        "perWeek": 45000,
+        "perMonth": 90000
+      }
+    }
+  ],
+  "models": [
+    "hunyuan-2.0-instruct",
+    "glm-5",
+    "kimi-k2.5",
+    "minimax-m2.5",
+    "hunyuan-t1",
+    "hunyuan-turbos"
+  ]
+}

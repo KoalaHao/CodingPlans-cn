@@ -1,0 +1,45 @@
+{
+  "name": "百度千帆 Coding Plan",
+  "url": "https://cloud.baidu.com/product/codingplan.html",
+  "icon": "code",
+  "updatedAt": "2026-03-12",
+  "extraInfoUrls": [
+    "https://cloud.baidu.com/doc/qianfan/s/imlg0beiu"
+  ],
+  "plans": [
+    {
+      "name": "Coding Plan Lite",
+      "price": {
+        "firstBuy": 7.9,
+        "firstRenew": 20,
+        "regular": 40,
+        "extraInfo": "首月优惠¥7.9，次月续费¥20，第三月恢复¥40"
+      },
+      "limits": {
+        "per5hours": 1200,
+        "perWeek": 9000,
+        "perMonth": 18000
+      }
+    },
+    {
+      "name": "Coding Plan Pro",
+      "price": {
+        "firstBuy": 39.9,
+        "firstRenew": 100,
+        "regular": 200,
+        "extraInfo": "首月优惠¥39.9，次月续费¥100，第三月恢复¥200"
+      },
+      "limits": {
+        "per5hours": 6000,
+        "perWeek": 45000,
+        "perMonth": 90000
+      }
+    }
+  ],
+  "models": [
+    "kimi-k2.5",
+    "deepseek-v3.2",
+    "minimax-m2.5",
+    "glm-5"
+  ]
+}

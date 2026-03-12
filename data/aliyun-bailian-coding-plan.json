@@ -1,0 +1,49 @@
+{
+  "name": "阿里云百炼 Coding Plan",
+  "url": "https://www.aliyun.com/benefit/scene/codingplan",
+  "icon": "code",
+  "updatedAt": "2026-03-12",
+  "extraInfoUrls": [
+    "https://help.aliyun.com/zh/model-studio/coding-plan"
+  ],
+  "plans": [
+    {
+      "name": "Lite 基础套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 40,
+        "extraInfo": "每日限量，上午9:30更新库存，售完即止"
+      },
+      "limits": {
+        "per5hours": 1200,
+        "perWeek": 9000,
+        "perMonth": 18000
+      }
+    },
+    {
+      "name": "Pro 高级套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 200,
+        "extraInfo": "续费限时5折，用量是Lite版的5倍"
+      },
+      "limits": {
+        "per5hours": 6000,
+        "perWeek": 45000,
+        "perMonth": 90000
+      }
+    }
+  ],
+  "models": [
+    "qwen3.5-plus",
+    "qwen3-max",
+    "qwen3-coder-next",
+    "qwen3-coder-plus",
+    "minimax-m2.5",
+    "glm-5",
+    "kimi-k2.5",
+    "glm-4.7"
+  ]
+}
