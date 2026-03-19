@@ -76,6 +76,21 @@
       "estimatedBenchmarks": ["liveCodeBench"]
     },
     {
+      "id": "minimax-m2.7",
+      "name": "MiniMax-M2.7",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 2000000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 128000,
+        "sweBench": 82.1,
+        "liveCodeBench": 79.3,
+        "parameters": "70B"
+      },
+      "estimatedBenchmarks": ["liveCodeBench"]
+    },
+    {
       "id": "kimi-k2.5",
       "name": "Kimi-K2.5",
       "icon": "rocket",
