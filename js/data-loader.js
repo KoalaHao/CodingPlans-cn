@@ -47,7 +47,7 @@ export class DataLoader {
       'tencent-coding-plan.json',
       'aliyun-bailian-coding-plan.json',
       'infini-ai-coding-plan.json',
-      'mthreads-coding-plan.json'
+      'jdcloud-coding-plan.json'
     ];
   }
 
