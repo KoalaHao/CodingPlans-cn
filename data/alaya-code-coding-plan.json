@@ -12,7 +12,7 @@
       "price": {
         "firstBuy": null,
         "firstRenew": null,
-        "regular": null,
+        "regular": 39,
         "extraInfo": "面向个人开发者与学习探索用户"
       },
       "limits": {
@@ -26,7 +26,7 @@
       "price": {
         "firstBuy": null,
         "firstRenew": null,
-        "regular": null,
+        "regular": 199,
         "extraInfo": "面向专业研发与重度用户，提供5倍月请求额度及优先队列服务"
       },
       "limits": {
