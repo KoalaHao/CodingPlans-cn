@@ -2,7 +2,7 @@
   "name": "腾讯云 Coding Plan",
   "url": "https://cloud.tencent.com/act/pro/codingplan",
   "icon": "code",
-  "updatedAt": "2026-03-12",
+  "updatedAt": "2026-04-02",
   "extraInfoUrls": [
     "https://cloud.tencent.com/document/product/1772/128947"
   ],
@@ -42,6 +42,10 @@
     "kimi-k2.5",
     "minimax-m2.5",
     "hunyuan-t1",
+    "hunyuan-turbos"
+  ]
+}
+
     "hunyuan-turbos"
   ]
 }
