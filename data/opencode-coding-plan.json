@@ -1,0 +1,33 @@
+{
+  "name": "OpenCode Go",
+  "url": "https://opencode.ai/docs/zh-cn/go",
+  "icon": "code",
+  "updatedAt": "2026-04-02",
+  "extraInfoUrls": [
+    "https://opencode.ai/docs/zh-cn/go"
+  ],
+  "plans": [
+    {
+      "name": "Go 套餐",
+      "price": {
+        "firstBuy": 5,
+        "firstRenew": 10,
+        "regular": 10,
+        "currency": "USD",
+        "extraInfo": "首月 5 美元，后续每月 10 美元"
+      },
+      "limits": {
+        "per5hours": 12,
+        "perWeek": 30,
+        "perMonth": 60
+      }
+    }
+  ],
+  "models": [
+    "glm-5",
+    "kimi-k2.5",
+    "minimax-m2.7",
+    "minimax-m2.5"
+  ],
+  "notes": "每5小时12美元额度，每周30美元额度，每月60美元额度"
+}
