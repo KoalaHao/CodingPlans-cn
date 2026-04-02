@@ -38,14 +38,11 @@
   ],
   "models": [
     "hunyuan-2.0-instruct",
+    "hunyuan-2.0-thinking",
     "glm-5",
     "kimi-k2.5",
     "minimax-m2.5",
     "hunyuan-t1",
-    "hunyuan-turbos"
-  ]
-}
-
     "hunyuan-turbos"
   ]
 }
