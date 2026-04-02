@@ -1,0 +1,46 @@
+{
+  "name": "九章云极 Alaya Code",
+  "url": "https://codingplan.alayanew.com/",
+  "icon": "code",
+  "updatedAt": "2026-04-02",
+  "extraInfoUrls": [
+    "https://www.csdn.net/article/2026-03-19/159246164"
+  ],
+  "plans": [
+    {
+      "name": "Lite 套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": null,
+        "extraInfo": "面向个人开发者与学习探索用户"
+      },
+      "limits": {
+        "per5hours": null,
+        "perWeek": null,
+        "perMonth": null
+      }
+    },
+    {
+      "name": "Pro 套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": null,
+        "extraInfo": "面向专业研发与重度用户，提供5倍月请求额度及优先队列服务"
+      },
+      "limits": {
+        "per5hours": null,
+        "perWeek": null,
+        "perMonth": null
+      }
+    }
+  ],
+  "models": [
+    "kimi-k2.5",
+    "qwen3.5-plus",
+    "glm-5",
+    "minimax-m2.5"
+  ],
+  "notes": "相比行业同类服务，Alaya Code在同价位下提供10倍以上的调用量；兼容OpenAI与Anthropic双SDK，支持Claude Code、OpenCode等主流开发工具"
+}
