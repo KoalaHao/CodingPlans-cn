@@ -2,6 +2,15 @@
   "updates": [
     {
       "date": "2026-04-03",
+      "provider": "小米 MiMo",
+      "changes": [
+        "新增 provider：小米 MiMo Token Plan",
+        "套餐：新用户特惠 ¥9.9 (20M)、Lite ¥39 (100M)、Pro ¥199 (600M)、Max ¥990 (1200M)",
+        "支持模型：MiMo-V2-Pro、MiMo-V2-Omni"
+      ]
+    },
+    {
+      "date": "2026-04-03",
       "provider": "OpenCode Go",
       "changes": [
         "新增模型：MiMo-V2-Pro、MiMo-V2-Omni"

@@ -77,7 +77,9 @@ export class Renderer {
         </div>
 
         <div class="provider-quota">
-          ${maxQuota !== null ? `最高 ${this.formatNumber(maxQuota)} 请求/月` : '额度未公开'}
+          ${provider.billingModel === 'token' 
+            ? (provider.pricing ? `¥${provider.pricing.inputToken}/M 输入 · ¥${provider.pricing.outputToken}/M 输出` : 'Token 计费')
+            : (maxQuota !== null ? `最高 ${this.formatNumber(maxQuota)} 请求/月` : '额度未公开')}
         </div>
 
         ${updatedDate ? `<div class="provider-updated">更新于 ${updatedDate}</div>` : ''}
@@ -305,7 +307,7 @@ export class Renderer {
             <div class="detail-section">
               <h3 class="section-title">套餐详情</h3>
               <div class="detail-plans">
-                ${provider.plans.map(plan => this.renderPlanCard(plan, provider.currency)).join('')}
+                ${provider.plans.map(plan => this.renderPlanCard(plan, provider.currency, provider)).join('')}
               </div>
             </div>
           </div>
@@ -316,9 +318,40 @@ export class Renderer {
     this.bindDetailEvents(onBack);
   }
 
-  renderPlanCard(plan, providerCurrency) {
+  renderPlanCard(plan, providerCurrency, provider) {
     const currency = plan.price.currency || providerCurrency;
     const isUSD = currency === 'USD';
+    const isTokenBased = provider && provider.billingModel === 'token';
+    
+    // Token 计费模式显示 token 额度，否则显示请求限额
+    const limitsSection = isTokenBased ? `
+        <div class="plan-limits">
+          <div class="limit-row">
+            <span class="limit-label">Token 额度</span>
+            <span class="limit-value">${plan.tokens || '-'}</span>
+          </div>
+          <div class="limit-row">
+            <span class="limit-label">有效期</span>
+            <span class="limit-value">${plan.validity || '-'}</span>
+          </div>
+        </div>
+    ` : `
+        <div class="plan-limits">
+          <div class="limit-row">
+            <span class="limit-label">5小时限额</span>
+            <span class="limit-value">${plan.limits && plan.limits.per5hours !== null ? this.formatLimit(plan.limits.per5hours, currency) : '-'}</span>
+          </div>
+          <div class="limit-row">
+            <span class="limit-label">每周限额</span>
+            <span class="limit-value">${plan.limits && plan.limits.perWeek !== null ? this.formatLimit(plan.limits.perWeek, currency) : '-'}</span>
+          </div>
+          <div class="limit-row">
+            <span class="limit-label">每月限额</span>
+            <span class="limit-value">${plan.limits && plan.limits.perMonth !== null ? this.formatLimit(plan.limits.perMonth, currency) : '-'}</span>
+          </div>
+        </div>
+        ${isUSD ? '<div class="usd-note">* 限额以美元价值计算，实际请求数取决于所用模型</div>' : ''}
+    `;
     
     return `
       <div class="plan-card">
@@ -344,21 +377,7 @@ export class Renderer {
 
         ${plan.price.extraInfo ? `<div class="plan-extra-info">${plan.price.extraInfo}</div>` : ''}
 
-        <div class="plan-limits">
-          <div class="limit-row">
-            <span class="limit-label">5小时限额</span>
-            <span class="limit-value">${plan.limits.per5hours !== null ? this.formatLimit(plan.limits.per5hours, currency) : '-'}</span>
-          </div>
-          <div class="limit-row">
-            <span class="limit-label">每周限额</span>
-            <span class="limit-value">${plan.limits.perWeek !== null ? this.formatLimit(plan.limits.perWeek, currency) : '-'}</span>
-          </div>
-          <div class="limit-row">
-            <span class="limit-label">每月限额</span>
-            <span class="limit-value">${plan.limits.perMonth !== null ? this.formatLimit(plan.limits.perMonth, currency) : '-'}</span>
-          </div>
-        </div>
-        ${isUSD ? '<div class="usd-note">* 限额以美元价值计算，实际请求数取决于所用模型</div>' : ''}
+        ${limitsSection}
       </div>
     `;
   }

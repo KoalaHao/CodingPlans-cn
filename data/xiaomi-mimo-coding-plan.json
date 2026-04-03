@@ -1,0 +1,72 @@
+{
+  "name": "小米 MiMo Token Plan",
+  "url": "https://platform.xiaomimimo.com/",
+  "icon": "code",
+  "updatedAt": "2026-04-03",
+  "extraInfoUrls": [
+    "https://platform.xiaomimimo.com/#/token-plan"
+  ],
+  "billingModel": "token",
+  "pricing": {
+    "inputToken": 5,
+    "outputToken": 20,
+    "unit": "M tokens",
+    "inputUnitPrice": "¥5.00 /M tokens",
+    "outputUnitPrice": "¥20.00 /M tokens"
+  },
+  "newUserBonus": {
+    "freeTokens": "10M",
+    "validity": "30天"
+  },
+  "plans": [
+    {
+      "name": "新用户特惠",
+      "price": {
+        "firstBuy": 9.9,
+        "firstRenew": null,
+        "regular": null,
+        "extraInfo": "每位新用户限购1次"
+      },
+      "tokens": "20M",
+      "validity": "30天"
+    },
+    {
+      "name": "Lite 套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 39,
+        "extraInfo": null
+      },
+      "tokens": "100M",
+      "validity": "30天"
+    },
+    {
+      "name": "Pro 套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 199,
+        "extraInfo": null
+      },
+      "tokens": "600M",
+      "validity": "30天"
+    },
+    {
+      "name": "Max 套餐",
+      "price": {
+        "firstBuy": null,
+        "firstRenew": null,
+        "regular": 990,
+        "extraInfo": null
+      },
+      "tokens": "1200M",
+      "validity": "30天"
+    }
+  ],
+  "models": [
+    "mimo-v2-pro",
+    "mimo-v2-omni"
+  ],
+  "notes": "按 token 计费，输入 ¥5/M tokens，输出 ¥20/M tokens；新用户赠送 10M tokens 免费额度"
+}
