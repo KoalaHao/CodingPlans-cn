@@ -72,7 +72,7 @@ export class Renderer {
         </div>
 
         <div class="provider-price">
-          ${minPrice !== null ? `${this.formatPrice(minPrice, provider.currency, true)}<span class="price-unit">/月起</span>` : '价格未公开'}
+          ${minPrice !== null ? `${this.formatPrice(minPrice, provider.currency || (provider.plans && provider.plans[0] && provider.plans[0].price && provider.plans[0].price.currency) || 'CNY', true)}<span class="price-unit">/月起</span>` : '价格未公开'}
         </div>
 
         <div class="provider-quota">
