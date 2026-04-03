@@ -832,8 +832,10 @@ export class Renderer {
 
   getMaxQuota(provider) {
     if (!provider.plans || provider.plans.length === 0) return null;
+    // Token 计费模式没有 limits 字段
+    if (provider.billingModel === 'token') return null;
     const quotas = provider.plans
-      .map(plan => plan.limits.perMonth)
+      .map(plan => plan.limits && plan.limits.perMonth)
       .filter(quota => quota !== null && quota !== undefined);
     return quotas.length > 0 ? Math.max(...quotas) : null;
   }
