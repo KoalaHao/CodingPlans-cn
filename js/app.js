@@ -57,6 +57,8 @@ class App {
       this.renderCompare();
     } else if (this.state.currentTab === 'model-compare') {
       this.renderModelCompare();
+    } else if (this.state.currentTab === 'update-log') {
+      this.renderUpdateLog();
     } else {
       this.renderHome();
     }
@@ -98,6 +100,13 @@ class App {
       (modelId) => this.handleModelToggle(modelId),
       (sortBy) => this.handleModelSortChange(sortBy),
       (filterType, value) => this.handleModelFilterChange(filterType, value),
+      () => this.handleFilterChange({ currentTab: 'home' })
+    );
+  }
+
+  renderUpdateLog() {
+    this.renderer.renderUpdateLogPage(
+      this.dataLoader.getUpdateLog(),
       () => this.handleFilterChange({ currentTab: 'home' })
     );
   }

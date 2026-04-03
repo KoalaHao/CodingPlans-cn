@@ -2,12 +2,16 @@ export class DataLoader {
   constructor() {
     this.providers = [];
     this.models = new Map();
+    this.updateLog = null;
   }
 
   async loadAllData() {
     try {
       // Load models first
       await this.loadModelsData();
+
+      // Load update log
+      await this.loadUpdateLog();
 
       // Then load providers - auto scan all JSON files in data folder
       const dataFiles = await this.scanDataFiles();
@@ -120,5 +124,20 @@ export class DataLoader {
 
   getAllModels() {
     return Array.from(this.models.values());
+  }
+
+  getUpdateLog() {
+    return this.updateLog;
+  }
+
+  async loadUpdateLog() {
+    try {
+      const response = await fetch('./data/update-log.json');
+      if (!response.ok) return;
+      const data = await response.json();
+      this.updateLog = data;
+    } catch (error) {
+      console.error('Error loading update log:', error);
+    }
   }
 }

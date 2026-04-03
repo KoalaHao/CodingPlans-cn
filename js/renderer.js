@@ -22,6 +22,7 @@ export class Renderer {
             <button class="tab active" data-tab="home">首页</button>
             <button class="tab" data-tab="compare">套餐对比</button>
             <button class="tab" data-tab="model-compare">模型对比</button>
+            <button class="tab" data-tab="update-log">更新日志</button>
           </div>
 
           <div class="filter-bar">
@@ -129,6 +130,7 @@ export class Renderer {
             <button class="tab" data-tab="home">首页</button>
             <button class="tab active" data-tab="compare">套餐对比</button>
             <button class="tab" data-tab="model-compare">模型对比</button>
+            <button class="tab" data-tab="update-log">更新日志</button>
           </div>
 
           <div class="compare-section">
@@ -393,6 +395,8 @@ export class Renderer {
           onFilterChange({ currentTab: 'compare' });
         } else if (tabName === 'model-compare') {
           onFilterChange({ currentTab: 'model-compare' });
+        } else if (tabName === 'update-log') {
+          onFilterChange({ currentTab: 'update-log' });
         }
       });
     });
@@ -700,6 +704,55 @@ export class Renderer {
         onFilterChange('clear', null);
       });
     }
+  }
+
+  renderUpdateLogPage(updateLog, onBack) {
+    const updates = updateLog ? updateLog.updates || [] : [];
+    const grouped = {};
+    updates.forEach(u => {
+      if (!grouped[u.date]) grouped[u.date] = [];
+      grouped[u.date].push(u);
+    });
+
+    const dates = Object.keys(grouped).sort((a, b) => new Date(b) - new Date(a));
+
+    this.root.innerHTML = `
+      <div class="app-container">
+        <header class="header">
+          <div class="header-content">
+            <h1>AI Coding Plan 对比平台</h1>
+            <p>对比主流AI编码服务的价格、额度和功能</p>
+          </div>
+        </header>
+        <main class="content">
+          <button class="back-button" id="back-button">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            返回首页
+          </button>
+          <div class="update-log-page">
+            <h2 class="update-log-title">📋 更新日志</h2>
+            ${dates.length === 0 ? '<p class="empty-state">暂无更新记录</p>' : dates.map(date => `
+              <div class="update-log-date-group">
+                <div class="update-log-date">${date}</div>
+                ${grouped[date].map(item => `
+                  <div class="update-log-card">
+                    <div class="update-log-provider">${item.provider}</div>
+                    <ul class="update-log-changes">
+                      ${item.changes.map(c => `<li>${c}</li>`).join('')}
+                    </ul>
+                  </div>
+                `).join('')}
+              </div>
+            `).join('')}
+          </div>
+        </main>
+      </div>
+    `;
+
+    document.getElementById('back-button').addEventListener('click', onBack);
   }
 
   getFilteredProviders(providers, filters) {

@@ -1607,3 +1607,75 @@ body {
   color: #6b7280;
   line-height: 1.5;
 }
+
+/* === 更新日志页面 === */
+.update-log-page {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.update-log-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.update-log-date-group {
+  margin-bottom: 24px;
+}
+
+.update-log-date {
+  font-size: 14px;
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.update-log-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+}
+
+.update-log-provider {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.update-log-changes {
+  margin: 0;
+  padding-left: 18px;
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.update-log-changes li {
+  margin-bottom: 2px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .update-log-card {
+    background: #1f2937;
+    border-color: #374151;
+  }
+
+  .update-log-provider {
+    color: #f3f4f6;
+  }
+
+  .update-log-changes {
+    color: #9ca3af;
+  }
+
+  .update-log-date {
+    color: #9ca3af;
+    border-bottom-color: #374151;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "updates": [
+    {
+      "date": "2026-04-03",
+      "provider": "OpenCode Go",
+      "changes": [
+        "新增模型：MiMo-V2-Pro、MiMo-V2-Omni"
+      ]
+    },
+    {
+      "date": "2026-04-02",
+      "provider": "阿里云百炼",
+      "changes": [
+        "移除 Lite 基础套餐（已停止新购）",
+        "更新 Pro 套餐优惠信息",
+        "添加 notes 说明"
+      ]
+    }
+  ]
+}
