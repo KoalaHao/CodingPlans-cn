@@ -6,14 +6,18 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 76.5,
         "liveCodeBench": 62.3,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["liveCodeBench"]
+      "estimatedBenchmarks": [
+        "liveCodeBench"
+      ]
     },
     {
       "id": "doubao-seed-2.0-pro",
@@ -21,7 +25,10 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 76.5,
@@ -36,14 +43,18 @@
       "icon": "cpu",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": false,
         "maxThinkingLength": null,
         "sweBench": 58.2,
         "liveCodeBench": 81.7,
         "parameters": "7B"
       },
-      "estimatedBenchmarks": ["sweBench"]
+      "estimatedBenchmarks": [
+        "sweBench"
+      ]
     },
     {
       "id": "doubao-seed-code",
@@ -51,14 +62,19 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 16000,
         "sweBench": 62.5,
         "liveCodeBench": 58.2,
         "parameters": "16B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "minimax-m2.5",
@@ -66,14 +82,18 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 75.8,
         "liveCodeBench": 68.5,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["liveCodeBench"]
+      "estimatedBenchmarks": [
+        "liveCodeBench"
+      ]
     },
     {
       "id": "minimax-m2.7",
@@ -81,14 +101,19 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 2000000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 128000,
         "sweBench": 82.1,
         "liveCodeBench": 79.3,
         "parameters": "70B"
       },
-      "estimatedBenchmarks": ["liveCodeBench"]
+      "estimatedBenchmarks": [
+        "liveCodeBench"
+      ]
     },
     {
       "id": "kimi-k2.5",
@@ -96,14 +121,20 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text", "image", "video"],
+        "modalities": [
+          "text",
+          "image",
+          "video"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 70.8,
         "liveCodeBench": 78.5,
         "parameters": "1T"
       },
-      "estimatedBenchmarks": ["liveCodeBench"]
+      "estimatedBenchmarks": [
+        "liveCodeBench"
+      ]
     },
     {
       "id": "glm-4.7",
@@ -111,14 +142,19 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 65.2,
         "liveCodeBench": 58.5,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "deepseek-v3.2",
@@ -126,14 +162,18 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 70.0,
         "liveCodeBench": 73.1,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["liveCodeBench"]
+      "estimatedBenchmarks": [
+        "liveCodeBench"
+      ]
     },
     {
       "id": "glm-5",
@@ -141,14 +181,20 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 72.0,
         "liveCodeBench": 75.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "hunyuan-2.0-instruct",
@@ -156,14 +202,19 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 68.0,
         "liveCodeBench": 65.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "hunyuan-2.0-thinking",
@@ -171,14 +222,19 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 72.0,
         "liveCodeBench": 70.0,
         "parameters": "100B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "hunyuan-t1",
@@ -186,14 +242,19 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 72.0,
         "liveCodeBench": 70.0,
         "parameters": "100B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "hunyuan-turbos",
@@ -201,14 +262,19 @@
       "icon": "cpu",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": false,
         "maxThinkingLength": null,
         "sweBench": 65.0,
         "liveCodeBench": 62.0,
         "parameters": "13B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "qwen3.5-plus",
@@ -216,14 +282,20 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 74.0,
         "liveCodeBench": 76.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "qwen3-max",
@@ -231,14 +303,20 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 76.0,
         "liveCodeBench": 79.0,
         "parameters": "100B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "qwen3-coder-next",
@@ -246,14 +324,19 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 75.0,
         "liveCodeBench": 80.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "qwen3-coder-plus",
@@ -261,14 +344,20 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 256000,
-        "modalities": ["text", "image"],
+        "modalities": [
+          "text",
+          "image"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 78.0,
         "liveCodeBench": 82.0,
         "parameters": "100B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "minimax-m2.1",
@@ -276,14 +365,19 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 16000,
         "sweBench": 72.0,
         "liveCodeBench": 65.0,
         "parameters": "16B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
     },
     {
       "id": "deepseek-v3.2-thinking",
@@ -291,14 +385,53 @@
       "icon": "rocket",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 64000,
         "sweBench": 75.0,
         "liveCodeBench": 78.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
+    },
+    {
+      "id": "mimo-v2-pro",
+      "name": "MiMo-V2-Pro",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": [
+          "text"
+        ],
+        "thinking": true,
+        "maxThinkingLength": null,
+        "sweBench": null,
+        "liveCodeBench": null,
+        "parameters": null
+      },
+      "estimatedBenchmarks": []
+    },
+    {
+      "id": "mimo-v2-omni",
+      "name": "MiMo-V2-Omni",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": [
+          "text"
+        ],
+        "thinking": true,
+        "maxThinkingLength": null,
+        "sweBench": null,
+        "liveCodeBench": null,
+        "parameters": null
+      },
+      "estimatedBenchmarks": []
     }
   ]
 }
