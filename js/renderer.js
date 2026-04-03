@@ -72,7 +72,7 @@ export class Renderer {
         </div>
 
         <div class="provider-price">
-          ${minPrice !== null ? `¥${minPrice}<span class="price-unit">/月起</span>` : '价格未公开'}
+          ${minPrice !== null ? `${this.formatPrice(minPrice, provider.currency, true)}<span class="price-unit">/月起</span>` : '价格未公开'}
         </div>
 
         <div class="provider-quota">
@@ -172,7 +172,7 @@ export class Renderer {
               <td class="row-label">最低价格</td>
               ${providers.map(p => {
                 const minPrice = this.getMinPrice(p);
-                return `<td>${minPrice !== null ? `¥${minPrice}/月` : '-'}</td>`;
+                return `<td>${minPrice !== null ? `${this.formatPrice(minPrice, p.currency, true)}/月` : '-'}</td>`;
               }).join('')}
             </tr>
             <tr>
@@ -227,12 +227,12 @@ export class Renderer {
                 <tr>
                   ${index === 0 ? `<td rowspan="${provider.plans.length}" class="provider-cell">${provider.name}</td>` : ''}
                   <td class="plan-name-cell">${plan.name}</td>
-                  <td>${plan.price.firstBuy !== null ? `¥${plan.price.firstBuy}` : '-'}</td>
-                  <td>${plan.price.firstRenew !== null ? `¥${plan.price.firstRenew}` : '-'}</td>
-                  <td>${plan.price.regular !== null ? `¥${plan.price.regular}` : '-'}</td>
-                  <td>${plan.limits.per5hours !== null ? this.formatNumber(plan.limits.per5hours) : '-'}</td>
-                  <td>${plan.limits.perWeek !== null ? this.formatNumber(plan.limits.perWeek) : '-'}</td>
-                  <td>${plan.limits.perMonth !== null ? this.formatNumber(plan.limits.perMonth) : '-'}</td>
+                  <td>${plan.price.firstBuy !== null ? this.formatPrice(plan.price.firstBuy, plan.price.currency || provider.currency, true) : '-'}</td>
+                  <td>${plan.price.firstRenew !== null ? this.formatPrice(plan.price.firstRenew, plan.price.currency || provider.currency, true) : '-'}</td>
+                  <td>${plan.price.regular !== null ? this.formatPrice(plan.price.regular, plan.price.currency || provider.currency, true) : '-'}</td>
+                  <td>${plan.limits.per5hours !== null ? this.formatLimit(plan.limits.per5hours, plan.price.currency || provider.currency) : '-'}</td>
+                  <td>${plan.limits.perWeek !== null ? this.formatLimit(plan.limits.perWeek, plan.price.currency || provider.currency) : '-'}</td>
+                  <td>${plan.limits.perMonth !== null ? this.formatLimit(plan.limits.perMonth, plan.price.currency || provider.currency) : '-'}</td>
                 </tr>
               `).join('')
             ).join('')}
@@ -303,7 +303,7 @@ export class Renderer {
             <div class="detail-section">
               <h3 class="section-title">套餐详情</h3>
               <div class="detail-plans">
-                ${provider.plans.map(plan => this.renderPlanCard(plan)).join('')}
+                ${provider.plans.map(plan => this.renderPlanCard(plan, provider.currency)).join('')}
               </div>
             </div>
           </div>
@@ -314,25 +314,29 @@ export class Renderer {
     this.bindDetailEvents(onBack);
   }
 
-  renderPlanCard(plan) {
+  renderPlanCard(plan, providerCurrency) {
+    const currency = plan.price.currency || providerCurrency;
+    const isUSD = currency === 'USD';
+    
     return `
       <div class="plan-card">
         <div class="plan-header">
           <h4 class="plan-name">${plan.name}</h4>
+          ${isUSD ? '<span class="currency-badge usd">USD</span>' : ''}
         </div>
 
         <div class="plan-prices">
           <div class="price-row">
             <span class="price-label">首购价</span>
-            <span class="price-value highlight">¥${plan.price.firstBuy !== null ? plan.price.firstBuy : '-'}</span>
+            <span class="price-value highlight">${this.formatPrice(plan.price.firstBuy, currency, true)}</span>
           </div>
           <div class="price-row">
             <span class="price-label">续费价</span>
-            <span class="price-value">¥${plan.price.firstRenew !== null ? plan.price.firstRenew : '-'}</span>
+            <span class="price-value">${this.formatPrice(plan.price.firstRenew, currency, true)}</span>
           </div>
           <div class="price-row">
             <span class="price-label">常规价</span>
-            <span class="price-value">¥${plan.price.regular !== null ? plan.price.regular : '-'}</span>
+            <span class="price-value">${this.formatPrice(plan.price.regular, currency, true)}</span>
           </div>
         </div>
 
@@ -341,17 +345,18 @@ export class Renderer {
         <div class="plan-limits">
           <div class="limit-row">
             <span class="limit-label">5小时限额</span>
-            <span class="limit-value">${plan.limits.per5hours !== null ? this.formatNumber(plan.limits.per5hours) : '-'}</span>
+            <span class="limit-value">${plan.limits.per5hours !== null ? this.formatLimit(plan.limits.per5hours, currency) : '-'}</span>
           </div>
           <div class="limit-row">
             <span class="limit-label">每周限额</span>
-            <span class="limit-value">${plan.limits.perWeek !== null ? this.formatNumber(plan.limits.perWeek) : '-'}</span>
+            <span class="limit-value">${plan.limits.perWeek !== null ? this.formatLimit(plan.limits.perWeek, currency) : '-'}</span>
           </div>
           <div class="limit-row">
             <span class="limit-label">每月限额</span>
-            <span class="limit-value">${plan.limits.perMonth !== null ? this.formatNumber(plan.limits.perMonth) : '-'}</span>
+            <span class="limit-value">${plan.limits.perMonth !== null ? this.formatLimit(plan.limits.perMonth, currency) : '-'}</span>
           </div>
         </div>
+        ${isUSD ? '<div class="usd-note">* 限额以美元价值计算，实际请求数取决于所用模型</div>' : ''}
       </div>
     `;
   }
@@ -724,6 +729,33 @@ export class Renderer {
       .map(plan => plan.price.regular)
       .filter(price => price !== null && price !== undefined);
     return prices.length > 0 ? Math.min(...prices) : null;
+  }
+
+  // 获取货币符号
+  getCurrencySymbol(currency) {
+    return currency === 'USD' ? '$' : '¥';
+  }
+
+  // 格式化价格显示（支持双币种）
+  formatPrice(price, currency, showDual = false) {
+    if (price === null || price === undefined) return '-';
+    const symbol = this.getCurrencySymbol(currency);
+    const basePrice = `${symbol}${price}`;
+    
+    if (!showDual || currency !== 'USD') return basePrice;
+    
+    // USD 显示双币种：$5 (~¥36)
+    const rmbPrice = Math.round(price * 7.2);
+    return `${basePrice} <span class="price-rmb">(~¥${rmbPrice})</span>`;
+  }
+
+  // 格式化限额显示（支持美元额度）
+  formatLimit(limit, currency) {
+    if (limit === null || limit === undefined) return '-';
+    if (currency === 'USD') {
+      return `$${limit} <span class="limit-unit">额度</span>`;
+    }
+    return this.formatNumber(limit);
   }
 
   getMaxQuota(provider) {

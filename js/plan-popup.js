@@ -91,6 +91,22 @@ export class PlanPopup {
       return num.toLocaleString();
     };
 
+    const formatPrice = (price, currency) => {
+      if (price === null || price === undefined) return '-';
+      const symbol = currency === 'USD' ? '$' : '¥';
+      const basePrice = `${symbol}${price}`;
+      if (currency !== 'USD') return basePrice;
+      const rmbPrice = Math.round(price * 7.2);
+      return `${basePrice} <span class="price-rmb">(~¥${rmbPrice})</span>`;
+    };
+
+    const formatLimit = (limit, currency) => {
+      if (limit === null || limit === undefined) return '-';
+      if (currency === 'USD') return `$${limit} 额度`;
+      return formatNumber(limit);
+    };
+
+    const currency = plan.price.currency || 'CNY';
     const hasAnyPrice = plan.price.firstBuy !== null || plan.price.firstRenew !== null || plan.price.regular !== null;
 
     this.popup.innerHTML = `
@@ -111,19 +127,19 @@ export class PlanPopup {
             ${plan.price.firstBuy !== null ? `
             <div class="plan-popup-price-row">
               <span class="plan-popup-price-label">首购价</span>
-              <span class="plan-popup-price-value highlight">¥${plan.price.firstBuy}</span>
+              <span class="plan-popup-price-value highlight">${formatPrice(plan.price.firstBuy, currency)}</span>
             </div>
             ` : ''}
             ${plan.price.firstRenew !== null ? `
             <div class="plan-popup-price-row">
               <span class="plan-popup-price-label">续费价</span>
-              <span class="plan-popup-price-value">¥${plan.price.firstRenew}</span>
+              <span class="plan-popup-price-value">${formatPrice(plan.price.firstRenew, currency)}</span>
             </div>
             ` : ''}
             ${plan.price.regular !== null ? `
             <div class="plan-popup-price-row">
               <span class="plan-popup-price-label">常规价</span>
-              <span class="plan-popup-price-value">¥${plan.price.regular}</span>
+              <span class="plan-popup-price-value">${formatPrice(plan.price.regular, currency)}</span>
             </div>
             ` : ''}
           </div>
@@ -147,7 +163,7 @@ export class PlanPopup {
                 </svg>
                 5小时限额
               </span>
-              <span class="plan-popup-limit-value">${formatNumber(plan.limits.per5hours)}</span>
+              <span class="plan-popup-limit-value">${formatLimit(plan.limits.per5hours, currency)}</span>
             </div>
             <div class="plan-popup-limit-row">
               <span class="plan-popup-limit-label">
@@ -159,7 +175,7 @@ export class PlanPopup {
                 </svg>
                 每周限额
               </span>
-              <span class="plan-popup-limit-value">${formatNumber(plan.limits.perWeek)}</span>
+              <span class="plan-popup-limit-value">${formatLimit(plan.limits.perWeek, currency)}</span>
             </div>
             <div class="plan-popup-limit-row">
               <span class="plan-popup-limit-label">
@@ -171,7 +187,7 @@ export class PlanPopup {
                 </svg>
                 每月限额
               </span>
-              <span class="plan-popup-limit-value">${formatNumber(plan.limits.perMonth)}</span>
+              <span class="plan-popup-limit-value">${formatLimit(plan.limits.perMonth, currency)}</span>
             </div>
           </div>
         </div>
