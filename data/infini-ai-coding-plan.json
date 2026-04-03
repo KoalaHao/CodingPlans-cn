@@ -2,7 +2,7 @@
   "name": "无问芯穹 Coding Plan",
   "url": "https://cloud.infini-ai.com/platform/ai",
   "icon": "code",
-  "updatedAt": "2026-03-12",
+  "updatedAt": "2026-04-03",
   "extraInfoUrls": [
     "https://docs.infini-ai.com/gen-studio/coding-plan/"
   ],
@@ -10,10 +10,10 @@
     {
       "name": "Infini Coding Lite",
       "price": {
-        "firstBuy": null,
+        "firstBuy": 19.9,
         "firstRenew": null,
         "regular": 40,
-        "extraInfo": "轻量日常改 Bug、写脚本、补单测、文档生成"
+        "extraInfo": "促销价¥19.9/月，满足入门级开发场景需求，支持Minimax、GLM、DeepSeek、Kimi等最新模型"
       },
       "limits": {
         "per5hours": 1000,
@@ -24,10 +24,10 @@
     {
       "name": "Infini Coding Pro",
       "price": {
-        "firstBuy": null,
+        "firstBuy": 99.9,
         "firstRenew": null,
         "regular": 200,
-        "extraInfo": "高频生产力，复杂排障、架构重构、连续迭代、多人协作"
+        "extraInfo": "促销价¥99.9/月，满足专业高级开发场景需求，5倍Lite套餐用量"
       },
       "limits": {
         "per5hours": 5000,

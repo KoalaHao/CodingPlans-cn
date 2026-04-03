@@ -2,7 +2,7 @@
   "name": "京东云 Coding Plan",
   "url": "https://www.jdcloud.com/cn/pages/codingplan",
   "icon": "code",
-  "updatedAt": "2026-03-27",
+  "updatedAt": "2026-04-03",
   "extraInfoUrls": [
     "https://docs.jdcloud.com/cn/jdaip/PackageOverview",
     "https://docs.jdcloud.com/cn/jdaip/Specialoffer"
@@ -11,10 +11,10 @@
     {
       "name": "Lite套餐",
       "price": {
-        "firstBuy": 8,
+        "firstBuy": 7.9,
         "firstRenew": null,
         "regular": 40,
-        "extraInfo": "限时特惠8元"
+        "extraInfo": "新用户首月7.9元，每月最高约18000次请求"
       },
       "limits": {
         "per5hours": 1200,
@@ -28,7 +28,7 @@
         "firstBuy": 39.9,
         "firstRenew": null,
         "regular": 200,
-        "extraInfo": "限时特惠39.9元，Lite套餐5倍用量"
+        "extraInfo": "新用户首月39.9元，每月最高约90000次请求，Lite套餐5倍用量"
       },
       "limits": {
         "per5hours": 6000,
@@ -39,10 +39,8 @@
   ],
   "models": [
     "deepseek-v3.2",
-    "glm-4.7",
     "glm-5",
     "minimax-m2.5",
-    "kimi-k2.5",
-    "qwen3-coder-plus"
+    "kimi-k2.5"
   ]
 }
