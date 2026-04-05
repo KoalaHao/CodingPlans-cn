@@ -2,7 +2,7 @@
   "name": "腾讯云 Coding Plan",
   "url": "https://cloud.tencent.com/act/pro/codingplan",
   "icon": "code",
-  "updatedAt": "2026-04-02",
+  "updatedAt": "2026-04-05",
   "extraInfoUrls": [
     "https://cloud.tencent.com/document/product/1772/128947"
   ],
@@ -44,5 +44,6 @@
     "minimax-m2.5",
     "hunyuan-t1",
     "hunyuan-turbos"
-  ]
+  ],
+  "notes": "新客首购特惠活动时间：2026.03.05 16:00 - 2026.04.19 00:00（UTC+8），每日限量先到先得；Kimi-K2.5 高峰时段可能触发限频，建议优先选用其他模型"
 }
