@@ -2,7 +2,7 @@
   "name": "百度千帆 Coding Plan",
   "url": "https://cloud.baidu.com/product/codingplan.html",
   "icon": "code",
-  "updatedAt": "2026-03-12",
+  "updatedAt": "2026-04-08",
   "extraInfoUrls": [
     "https://cloud.baidu.com/doc/qianfan/s/imlg0beiu"
   ],
@@ -24,10 +24,10 @@
     {
       "name": "Coding Plan Pro",
       "price": {
-        "firstBuy": 39.9,
-        "firstRenew": 100,
+        "firstBuy": null,
+        "firstRenew": null,
         "regular": 200,
-        "extraInfo": "首月优惠¥39.9，次月续费¥100，第三月恢复¥200"
+        "extraInfo": "¥200/月，无首月优惠"
       },
       "limits": {
         "per5hours": 6000,

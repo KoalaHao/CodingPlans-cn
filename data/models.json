@@ -197,6 +197,27 @@
       ]
     },
     {
+      "id": "glm-5.1",
+      "name": "GLM-5.1",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 74.0,
+        "liveCodeBench": 78.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ]
+    },
+    {
       "id": "hunyuan-2.0-instruct",
       "name": "Tencent Hunyuan 2.0 Instruct",
       "icon": "zap",
