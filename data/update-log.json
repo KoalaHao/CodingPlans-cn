@@ -2,6 +2,14 @@
   "updates": [
     {
       "date": "2026-04-09",
+      "provider": "阿里云百炼",
+      "changes": [
+        "新增模型：qwen3.6-plus（1M上下文，支持图片和视频，Coding能力超越Qwen3-Max）",
+        "Pro套餐专属权益，Lite套餐不支持"
+      ]
+    },
+    {
+      "date": "2026-04-09",
       "provider": "字节方舟",
       "changes": [
         "文档最新更新时间更新为 2026-04-08"

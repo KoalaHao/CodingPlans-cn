@@ -223,15 +223,23 @@
       "icon": "zap",
       "info": {
         "contextWindow": 128000,
-        "modalities": ["text"],
+        "modalities": [
+          "text"
+        ],
         "thinking": true,
         "maxThinkingLength": 32000,
         "sweBench": 73.0,
         "liveCodeBench": 76.0,
         "parameters": "32B"
       },
-      "estimatedBenchmarks": ["sweBench", "liveCodeBench"],
-      "providers": ["OpenCode Zen", "OpenCode Go"]
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ],
+      "providers": [
+        "OpenCode Zen",
+        "OpenCode Go"
+      ]
     },
     {
       "id": "hunyuan-2.0-instruct",
@@ -332,6 +340,9 @@
       "estimatedBenchmarks": [
         "sweBench",
         "liveCodeBench"
+      ],
+      "providers": [
+        "阿里云百炼"
       ]
     },
     {
@@ -353,6 +364,9 @@
       "estimatedBenchmarks": [
         "sweBench",
         "liveCodeBench"
+      ],
+      "providers": [
+        "阿里云百炼"
       ]
     },
     {
@@ -373,6 +387,9 @@
       "estimatedBenchmarks": [
         "sweBench",
         "liveCodeBench"
+      ],
+      "providers": [
+        "阿里云百炼"
       ]
     },
     {
@@ -394,6 +411,9 @@
       "estimatedBenchmarks": [
         "sweBench",
         "liveCodeBench"
+      ],
+      "providers": [
+        "阿里云百炼"
       ]
     },
     {
@@ -469,6 +489,31 @@
         "parameters": null
       },
       "estimatedBenchmarks": []
+    },
+    {
+      "id": "qwen3.6-plus",
+      "name": "Qwen3.6-Plus",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 1000000,
+        "modalities": [
+          "text",
+          "image",
+          "video"
+        ],
+        "thinking": true,
+        "maxThinkingLength": 64000,
+        "sweBench": 78.0,
+        "liveCodeBench": 81.0,
+        "parameters": "100B+"
+      },
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ],
+      "providers": [
+        "阿里云百炼"
+      ]
     }
   ]
 }
