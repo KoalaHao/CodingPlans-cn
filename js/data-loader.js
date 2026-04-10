@@ -54,7 +54,8 @@ export class DataLoader {
       'jdcloud-coding-plan.json',
       'alaya-code-coding-plan.json',
       'opencode-coding-plan.json',
-      'xiaomi-mimo-coding-plan.json'
+      'xiaomi-mimo-coding-plan.json',
+      'xfyun-astron-coding-plan.json'
     ];
   }
 
