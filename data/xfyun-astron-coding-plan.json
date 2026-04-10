@@ -1,0 +1,65 @@
+{
+  "name": "讯飞星辰 Astron Coding Plan",
+  "url": "https://maas.xfyun.cn/packageSubscription",
+  "icon": "spark",
+  "updatedAt": "2026-04-10",
+  "extraInfoUrls": [
+    "https://www.xfyun.cn/doc/spark/CodingPlan.html"
+  ],
+  "plans": [
+    {
+      "name": "专业版",
+      "price": {
+        "regular": 39,
+        "extraInfo": "焕新版，2026年4月9日上线"
+      },
+      "limits": {
+        "per5hours": 1200,
+        "perWeek": 9000,
+        "perMonth": 18000
+      }
+    },
+    {
+      "name": "高效版",
+      "price": {
+        "regular": 199,
+        "extraInfo": "焕新版，2026年4月9日上线"
+      },
+      "limits": {
+        "per5hours": 6000,
+        "perWeek": 45000,
+        "perMonth": 90000
+      }
+    }
+  ],
+  "models": [
+    "deepseek-v3.2",
+    "glm-4.7-flash",
+    "glm-5",
+    "minimax-m2.5",
+    "kimi-k2.5"
+  ],
+  "modelsByPlan": {
+    "专业版": [
+      "deepseek-v3.2",
+      "glm-4.7-flash",
+      "glm-5",
+      "minimax-m2.5",
+      "kimi-k2.5"
+    ],
+    "高效版": [
+      "deepseek-v3.2",
+      "glm-4.7-flash",
+      "glm-5",
+      "glm-5.1",
+      "minimax-m2.5",
+      "kimi-k2.5",
+      "spark-x2"
+    ]
+  },
+  "notes": "模型统一使用 astron-code-latest，底层模型在控制台切换，1-3分钟生效。支持 OpenAI 协议和 Anthropic 协议。无忧版（¥3.9/19）仅支持本地可跑的小模型（Qwen3.5-35B-A3B等），未列入。",
+  "protocols": {
+    "openai": "https://maas-coding-api.cn-huabei-1.xf-yun.com/v2",
+    "anthropic": "https://maas-coding-api.cn-huabei-1.xf-yun.com/anthropic"
+  }
+}

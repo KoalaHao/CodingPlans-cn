@@ -492,7 +492,24 @@
       ],
       "providers": [
         "OpenCode Go",
-        "OpenCode Zen"
+        "OpenCode Zen",
+        "讯飞星辰"
+      ]
+    },
+    {
+      "id": "spark-x2",
+      "name": "星火X2",
+      "icon": "flame",
+      "info": {
+        "contextWindow": 8192,
+        "modalities": [
+          "text"
+        ],
+        "thinking": false,
+        "parameters": "13B"
+      },
+      "providers": [
+        "讯飞星辰"
       ]
     }
   ]
