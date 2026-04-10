@@ -3,7 +3,7 @@
   "url": "https://opencode.ai/docs/zh-cn/go",
   "icon": "code",
   "currency": "USD",
-  "updatedAt": "2026-04-02",
+  "updatedAt": "2026-04-10",
   "extraInfoUrls": [
     "https://opencode.ai/docs/zh-cn/go"
   ],
@@ -26,6 +26,7 @@
   ],
   "models": [
     "glm-5",
+    "glm-5.1",
     "kimi-k2.5",
     "mimo-v2-pro",
     "mimo-v2-omni",

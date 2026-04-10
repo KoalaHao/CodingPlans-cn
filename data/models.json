@@ -197,51 +197,6 @@
       ]
     },
     {
-      "id": "glm-5.1",
-      "name": "GLM-5.1",
-      "icon": "zap",
-      "info": {
-        "contextWindow": 128000,
-        "modalities": [
-          "text",
-          "image"
-        ],
-        "thinking": true,
-        "maxThinkingLength": 32000,
-        "sweBench": 74.0,
-        "liveCodeBench": 78.0,
-        "parameters": "32B"
-      },
-      "estimatedBenchmarks": [
-        "sweBench",
-        "liveCodeBench"
-      ]
-    },
-    {
-      "id": "glm-5.1",
-      "name": "GLM-5.1",
-      "icon": "zap",
-      "info": {
-        "contextWindow": 128000,
-        "modalities": [
-          "text"
-        ],
-        "thinking": true,
-        "maxThinkingLength": 32000,
-        "sweBench": 73.0,
-        "liveCodeBench": 76.0,
-        "parameters": "32B"
-      },
-      "estimatedBenchmarks": [
-        "sweBench",
-        "liveCodeBench"
-      ],
-      "providers": [
-        "OpenCode Zen",
-        "OpenCode Go"
-      ]
-    },
-    {
       "id": "hunyuan-2.0-instruct",
       "name": "Tencent Hunyuan 2.0 Instruct",
       "icon": "zap",
@@ -513,6 +468,31 @@
       ],
       "providers": [
         "阿里云百炼"
+      ]
+    },
+    {
+      "id": "glm-5.1",
+      "name": "GLM-5.1",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": [
+          "text",
+          "image"
+        ],
+        "thinking": true,
+        "maxThinkingLength": 32000,
+        "sweBench": 74.0,
+        "liveCodeBench": 78.0,
+        "parameters": "32B"
+      },
+      "estimatedBenchmarks": [
+        "sweBench",
+        "liveCodeBench"
+      ],
+      "providers": [
+        "OpenCode Go",
+        "OpenCode Zen"
       ]
     }
   ]

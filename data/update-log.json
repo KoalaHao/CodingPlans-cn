@@ -1,6 +1,14 @@
 {
   "updates": [
     {
+      "date": "2026-04-10",
+      "provider": "OpenCode Go",
+      "changes": [
+        "新增模型：GLM-5.1（与 OpenCode Zen 保持一致）",
+        "修复 models.json 中重复的 glm-5.1 记录，合并 providers"
+      ]
+    },
+    {
       "date": "2026-04-09",
       "provider": "阿里云百炼",
       "changes": [
