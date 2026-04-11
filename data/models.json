@@ -511,6 +511,33 @@
       "providers": [
         "讯飞星辰"
       ]
+    },
+    {
+      "id": "big-pickle",
+      "name": "Big Pickle",
+      "icon": "🥒",
+      "info": "OpenCode Zen 提供的免费实验模型，限时开放以收集反馈",
+      "providers": [
+        "OpenCode Zen"
+      ]
+    },
+    {
+      "id": "nemotron-3-super-free",
+      "name": "Nemotron 3 Super Free",
+      "icon": "🟢",
+      "info": "NVIDIA 提供的免费实验模型，限时开放，数据可能被记录用于模型改进",
+      "providers": [
+        "OpenCode Zen"
+      ]
+    },
+    {
+      "id": "qwen3.6-plus-free",
+      "name": "Qwen3.6 Plus Free",
+      "icon": "🌟",
+      "info": "OpenCode Zen 提供的 Qwen3.6 Plus 免费版本，限时开放以收集反馈",
+      "providers": [
+        "OpenCode Zen"
+      ]
     }
   ]
 }

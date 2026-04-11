@@ -1,6 +1,16 @@
 {
   "updates": [
     {
+      "date": "2026-04-11",
+      "provider": "OpenCode Zen",
+      "changes": [
+        "新增免费模型：Big Pickle（限时免费实验模型）",
+        "新增免费模型：Nemotron 3 Super Free（NVIDIA 免费实验模型）",
+        "新增免费模型：Qwen3.6 Plus Free（Qwen3.6 Plus 免费版本）",
+        "同步更新 OpenCode Go 模型列表（与 Zen 保持一致）"
+      ]
+    },
+    {
       "date": "2026-04-10",
       "provider": "讯飞星辰",
       "changes": [
