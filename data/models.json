@@ -585,6 +585,15 @@
       "providers": [
         "OpenCode Zen"
       ]
+    },
+    {
+      "id": "minimax-m2.5-free",
+      "name": "MiniMax M2.5 Free",
+      "icon": "🌟",
+      "info": "OpenCode Zen 提供的 MiniMax M2.5 免费版本，限时开放以收集反馈",
+      "providers": [
+        "OpenCode Zen"
+      ]
     }
   ]
 }

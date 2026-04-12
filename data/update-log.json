@@ -1,6 +1,21 @@
 {
   "updates": [
     {
+      "date": "2026-04-12",
+      "provider": "阿里云百炼",
+      "changes": [
+        "Lite套餐4月13日起停止续费与升级（此前已停止新购）"
+      ]
+    },
+    {
+      "date": "2026-04-12",
+      "provider": "OpenCode Zen",
+      "changes": [
+        "新增免费模型：MiniMax M2.5 Free（限时免费）",
+        "同步更新 OpenCode Go 模型列表"
+      ]
+    },
+    {
       "date": "2026-04-11",
       "provider": "OpenCode Zen",
       "changes": [

@@ -2,7 +2,7 @@
   "name": "阿里云百炼 Coding Plan",
   "url": "https://www.aliyun.com/benefit/scene/codingplan",
   "icon": "code",
-  "updatedAt": "2026-04-09",
+  "updatedAt": "2026-04-12",
   "extraInfoUrls": [
     "https://help.aliyun.com/zh/model-studio/coding-plan"
   ],
@@ -33,5 +33,5 @@
     "kimi-k2.5",
     "glm-4.7"
   ],
-  "notes": "Lite 基础套餐已于 2026 年 3 月 20 日停止新购，已购买用户可继续使用和续费；首次续费 5 折活动已于 2026 年 4 月 1 日结束；推荐模型：qwen3.6-plus（支持图片理解和视频）、qwen3.5-plus（支持图片理解）、kimi-k2.5（支持图片理解）、glm-5、MiniMax-M2.5"
+  "notes": "Lite 基础套餐已于 2026 年 3 月 20 日停止新购，4 月 13 日起停止续费与升级；首次续费 5 折活动已于 2026 年 4 月 1 日结束；推荐模型：qwen3.6-plus（支持图片理解和视频）、qwen3.5-plus（支持图片理解）、kimi-k2.5（支持图片理解）、glm-5、MiniMax-M2.5"
 }

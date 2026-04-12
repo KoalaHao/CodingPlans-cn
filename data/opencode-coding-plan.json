@@ -3,7 +3,7 @@
   "url": "https://opencode.ai/docs/zh-cn/go",
   "icon": "code",
   "currency": "USD",
-  "updatedAt": "2026-04-11",
+  "updatedAt": "2026-04-12",
   "extraInfoUrls": [
     "https://opencode.ai/docs/zh-cn/go"
   ],
@@ -34,7 +34,8 @@
     "minimax-m2.5",
     "big-pickle",
     "nemotron-3-super-free",
-    "qwen3.6-plus-free"
+    "qwen3.6-plus-free",
+    "minimax-m2.5-free"
   ],
   "notes": "每5小时12美元额度，每周30美元额度，每月60美元额度"
 }
