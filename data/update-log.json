@@ -1,6 +1,14 @@
 {
   "updates": [
     {
+      "date": "2026-04-15",
+      "provider": "无问芯穹",
+      "changes": [
+        "新增模型：glm-5.1（同步 OpenCode Zen 模型列表）",
+        "同步更新 models.json 中 glm-5.1 的 providers 字段，新增无问芯穹渠道"
+      ]
+    },
+    {
       "date": "2026-04-12",
       "provider": "阿里云百炼",
       "changes": [

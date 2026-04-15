@@ -2,7 +2,7 @@
   "name": "无问芯穹 Coding Plan",
   "url": "https://cloud.infini-ai.com/platform/ai",
   "icon": "code",
-  "updatedAt": "2026-04-03",
+  "updatedAt": "2026-04-15",
   "extraInfoUrls": [
     "https://docs.infini-ai.com/gen-studio/coding-plan/"
   ],
@@ -44,6 +44,7 @@
     "minimax-m2.5",
     "minimax-m2.7",
     "glm-4.7",
-    "glm-5"
+    "glm-5",
+    "glm-5.1"
   ]
 }
