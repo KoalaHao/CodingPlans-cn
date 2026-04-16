@@ -93,6 +93,10 @@
       },
       "estimatedBenchmarks": [
         "liveCodeBench"
+      ],
+      "providers": [
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -217,6 +221,10 @@
       "estimatedBenchmarks": [
         "sweBench",
         "liveCodeBench"
+      ],
+      "providers": [
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -320,7 +328,9 @@
         "liveCodeBench"
       ],
       "providers": [
-        "阿里云百炼"
+        "阿里云百炼",
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -514,7 +524,9 @@
         "liveCodeBench"
       ],
       "providers": [
-        "阿里云百炼"
+        "阿里云百炼",
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -538,8 +550,8 @@
         "liveCodeBench"
       ],
       "providers": [
-        "OpenCode Go",
         "OpenCode Zen",
+        "OpenCode Go",
         "讯飞星辰",
         "无问芯穹"
       ]
@@ -566,7 +578,8 @@
       "icon": "🥒",
       "info": "OpenCode Zen 提供的免费实验模型，限时开放以收集反馈",
       "providers": [
-        "OpenCode Zen"
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -575,7 +588,8 @@
       "icon": "🟢",
       "info": "NVIDIA 提供的免费实验模型，限时开放，数据可能被记录用于模型改进",
       "providers": [
-        "OpenCode Zen"
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -584,7 +598,8 @@
       "icon": "🌟",
       "info": "OpenCode Zen 提供的 Qwen3.6 Plus 免费版本，限时开放以收集反馈",
       "providers": [
-        "OpenCode Zen"
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
     },
     {
@@ -593,8 +608,253 @@
       "icon": "🌟",
       "info": "OpenCode Zen 提供的 MiniMax M2.5 免费版本，限时开放以收集反馈",
       "providers": [
-        "OpenCode Zen"
+        "OpenCode Zen",
+        "OpenCode Go"
       ]
+    },
+    {
+      "id": "gpt-5.4",
+      "name": "GPT-5.4",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 64000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.4-pro",
+      "name": "GPT-5.4-Pro",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 512000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 128000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.4-mini",
+      "name": "GPT-5.4-Mini",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text"],
+        "thinking": true,
+        "maxThinkingLength": 32000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.4-nano",
+      "name": "GPT-5.4-Nano",
+      "icon": "cpu",
+      "info": {
+        "contextWindow": 64000,
+        "modalities": ["text"],
+        "thinking": false
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.3-codex",
+      "name": "GPT-5.3-Codex",
+      "icon": "rocket",
+      "info": "OpenAI GPT-5.3 Codex 编程优化版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.3-codex-spark",
+      "name": "GPT-5.3-Codex-Spark",
+      "icon": "zap",
+      "info": "OpenAI GPT-5.3 Codex Spark 轻量版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.2",
+      "name": "GPT-5.2",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text"],
+        "thinking": true
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.2-codex",
+      "name": "GPT-5.2-Codex",
+      "icon": "rocket",
+      "info": "OpenAI GPT-5.2 Codex 编程优化版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.1",
+      "name": "GPT-5.1",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text"],
+        "thinking": true
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.1-codex",
+      "name": "GPT-5.1-Codex",
+      "icon": "rocket",
+      "info": "OpenAI GPT-5.1 Codex 编程优化版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.1-codex-max",
+      "name": "GPT-5.1-Codex-Max",
+      "icon": "rocket",
+      "info": "OpenAI GPT-5.1 Codex Max 最大版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5.1-codex-mini",
+      "name": "GPT-5.1-Codex-Mini",
+      "icon": "zap",
+      "info": "OpenAI GPT-5.1 Codex Mini 轻量版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5",
+      "name": "GPT-5",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text"],
+        "thinking": true
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5-codex",
+      "name": "GPT-5-Codex",
+      "icon": "rocket",
+      "info": "OpenAI GPT-5 Codex 编程优化版本",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gpt-5-nano",
+      "name": "GPT-5-Nano",
+      "icon": "cpu",
+      "info": "OpenAI GPT-5 Nano 轻量版本，免费",
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-opus-4-6",
+      "name": "Claude-Opus-4.6",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 512000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 128000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-opus-4-5",
+      "name": "Claude-Opus-4.5",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 512000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 128000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-opus-4-1",
+      "name": "Claude-Opus-4.1",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 512000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 128000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-sonnet-4-6",
+      "name": "Claude-Sonnet-4.6",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-sonnet-4-5",
+      "name": "Claude-Sonnet-4.5",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-sonnet-4",
+      "name": "Claude-Sonnet-4",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "claude-haiku-4-5",
+      "name": "Claude-Haiku-4.5",
+      "icon": "cpu",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 32000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gemini-3.1-pro",
+      "name": "Gemini-3.1-Pro",
+      "icon": "rocket",
+      "info": {
+        "contextWindow": 256000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 64000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
+    },
+    {
+      "id": "gemini-3-flash",
+      "name": "Gemini-3-Flash",
+      "icon": "zap",
+      "info": {
+        "contextWindow": 128000,
+        "modalities": ["text", "image"],
+        "thinking": true,
+        "maxThinkingLength": 32000
+      },
+      "providers": ["OpenCode Zen", "OpenCode Go"]
     }
   ]
 }

@@ -1,6 +1,21 @@
 {
   "updates": [
     {
+      "date": "2026-04-16",
+      "provider": "OpenCode Go",
+      "changes": [
+        "新增模型：GPT-5.4 系列（gpt-5.4、gpt-5.4-pro、gpt-5.4-mini、gpt-5.4-nano）",
+        "新增模型：GPT-5.3 Codex 系列（gpt-5.3-codex、gpt-5.3-codex-spark）",
+        "新增模型：GPT-5.2 系列（gpt-5.2、gpt-5.2-codex）",
+        "新增模型：GPT-5.1 系列（gpt-5.1、gpt-5.1-codex、gpt-5.1-codex-max、gpt-5.1-codex-mini）",
+        "新增模型：GPT-5 系列（gpt-5、gpt-5-codex、gpt-5-nano）",
+        "新增模型：Claude 4.x 系列（claude-opus-4-6、claude-opus-4-5、claude-opus-4-1、claude-sonnet-4-6、claude-sonnet-4-5、claude-sonnet-4、claude-haiku-4-5）",
+        "新增模型：Gemini 3.x 系列（gemini-3.1-pro、gemini-3-flash）",
+        "同步更新 models.json，为现有模型添加 OpenCode Zen/OpenCode Go providers 字段",
+        "更新文档链接至 https://opencode.ai/docs/zen（Go 已合并到 Zen）"
+      ]
+    },
+    {
       "date": "2026-04-15",
       "provider": "无问芯穹",
       "changes": [

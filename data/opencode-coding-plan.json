@@ -3,9 +3,9 @@
   "url": "https://opencode.ai/docs/zh-cn/go",
   "icon": "code",
   "currency": "USD",
-  "updatedAt": "2026-04-12",
+  "updatedAt": "2026-04-16",
   "extraInfoUrls": [
-    "https://opencode.ai/docs/zh-cn/go"
+    "https://opencode.ai/docs/zen"
   ],
   "plans": [
     {
@@ -28,14 +28,39 @@
     "glm-5",
     "glm-5.1",
     "kimi-k2.5",
-    "mimo-v2-pro",
-    "mimo-v2-omni",
     "minimax-m2.7",
     "minimax-m2.5",
     "big-pickle",
     "nemotron-3-super-free",
     "qwen3.6-plus-free",
-    "minimax-m2.5-free"
+    "minimax-m2.5-free",
+    "gpt-5.4",
+    "gpt-5.4-pro",
+    "gpt-5.4-mini",
+    "gpt-5.4-nano",
+    "gpt-5.3-codex",
+    "gpt-5.3-codex-spark",
+    "gpt-5.2",
+    "gpt-5.2-codex",
+    "gpt-5.1",
+    "gpt-5.1-codex",
+    "gpt-5.1-codex-max",
+    "gpt-5.1-codex-mini",
+    "gpt-5",
+    "gpt-5-codex",
+    "gpt-5-nano",
+    "claude-opus-4-6",
+    "claude-opus-4-5",
+    "claude-opus-4-1",
+    "claude-sonnet-4-6",
+    "claude-sonnet-4-5",
+    "claude-sonnet-4",
+    "claude-haiku-4-5",
+    "claude-3-5-haiku",
+    "gemini-3.1-pro",
+    "gemini-3-flash",
+    "qwen3.6-plus",
+    "qwen3.5-plus"
   ],
-  "notes": "每5小时12美元额度，每周30美元额度，每月60美元额度"
+  "notes": "每5小时12美元额度，每周30美元额度，每月60美元额度；OpenCode Go 已合并到 OpenCode Zen，统一从 https://opencode.ai/docs/zen 获取模型列表"
 }
